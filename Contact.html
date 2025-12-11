@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+
+    <style>
+        body {
+            /* Keep original background settings */
+            background-image: url('softgreen.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+            /* Use Flexbox to center the content on the page */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center horizontally */
+            min-height: 100vh; /* Ensure the body takes up the full viewport height */
+            margin: 0;
+            padding: 20px 0; /* Add top/bottom padding */
+            font-family: Arial, sans-serif; /* Set a standard font */
+        }
+
+        .form-container {
+            /* STYLING FOR THE BOX - Mimicking the professional look */
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 5px; /* Slightly sharper corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More noticeable shadow */
+            border: 1px solid #ddd; /* A subtle light border */
+            width: 90%;
+            max-width: 650px; /* Increased max width slightly */
+            margin-bottom: 20px;
+        }
+
+        /* Full-width image within the container */
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        /* Form element styling for structure */
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        input[type="color"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px; /* Increased padding */
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        /* Button styling for clear actions */
+        .button-group {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Blue color similar to your example submit button */
+            color: white;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        button[type="reset"] {
+            background-color: #6c757d; /* Gray color */
+            color: white;
+        }
+        button[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <img src="uitm kdh.jpg" class="header-image">
+
+    <form action="MAILTO:nurinzahidahazwira@gmail.com" method="post" enctype="text/plain">
+
+        <p>First Name:<br>
+        <input type="text" name="firstname" required></p>
+
+        <p>Last Name:<br>
+        <input type="text" name="lastname" required></p>
+
+        <p>Age:<br>
+        <input type="number" name="age" required></p>
+
+        <p>Gender:<br>
+        <input type="radio" name="gender" value="male"> Male &nbsp;
+        <input type="radio" name="gender" value="female"> Female</p>
+
+        <p>D.O.B:<br>
+        <input type="date" name="dob"></p>
+
+        <p>Email:<br>
+        <input type="email" name="email"></p>
+
+        <p>Tel No:<br>
+        <input type="text" name="telno" required></p>
+
+        <p>Comment:<br>
+        <textarea name="message" rows="5" placeholder="Comment Here"></textarea></p>
+
+        <div class="button-group">
+            <button type="submit" onclick="alert('This Form Has Been Sent')">Submit Message</button>
+            <button type="reset" onclick="alert('This Page Has Been Reset')">Reset</button>
+        </div>
+
+    </form>
+
+    <hr style="margin-top: 30px; border-color: #eee;">
+    <div style="padding-top: 15px;">
+        <h3>References Available Upon Request</h3>
+        <p style="font-size: 14px;">For professional inquiries, please contact the following individuals directly.</p>
+        <p><strong>Referee 1:</strong> [MAHADI BIN MAHMOOD]</p>
+        <p><strong>Contact:</strong> [mahadi147@uitm.edu.my]</p>
+        <p><strong>Phone Number:</strong> [04-456 2605]</p>
+    </div>
+</div>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<footer class="w3-container w3-teal w3-center w3-margin-top" style="width:100%;">
+  <p>Recommended: Latest Chrome, Firefox, or Edge | Resolution: 1280x720 or higher</p>
+  <p><i>Last Updated: 12 December 2025</p></i>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  <p>&copy; 2025 Nurin Zahidah. Copyright. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
